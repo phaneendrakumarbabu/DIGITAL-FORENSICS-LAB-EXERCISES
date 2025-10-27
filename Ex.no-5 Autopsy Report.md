@@ -1,84 +1,193 @@
-# Experiment 5: Use Autopsy to Create a Case and Import Evidence
+# 🧩 **Ex.No.5 — Using Autopsy to Create a Case and Import Evidence**
 
-## Aim
-To analyze a forensic disk image using Autopsy and extract digital evidence.
+---
 
-## Description
-Autopsy is an open-source digital forensics platform for analyzing hard drives and mobile devices. It offers a user-friendly interface for file system analysis, keyword searching, and timeline creation. The tool supports multiple file formats and integrates plugins for enhanced forensic capabilities.
+## 🏫 **Student Information**
 
-## Installation
-Download and Install: Autopsy can be downloaded from the official website. Follow the installation instructions based on your operating system (Windows, Linux, or macOS).
+| **Name**                              | **Register Number** | **Branch**          | **College**              |
+|--------------------------------------|---------------------|---------------------|--------------------------|
+| 🧑‍💻 Goru Naga Phaneendra Kumar Babu | 99230041067         | CSE - Cybersecurity | Kalasalingam University  |
 
-## Steps
+---
 
-### Step-1
-Create a new case by clicking on New Case.
+## 🎯 **Aim**
+To analyze a forensic disk image using **Autopsy**, identify artifacts, and extract **digital evidence** for investigation.
 
-![(images/step1.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im1.png)
+---
 
-### Step-2
-Enter the case name and location where the case data will be stored. Fill in the details like the case number, examiner's name, etc., and click Next.
+## 📘 **Theory**
 
-![(images/step2.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im2.png)
+### 🔹 What is Autopsy?
+**Autopsy** is a powerful **open-source digital forensics platform** used for analyzing disk images, mobile data, and memory dumps.  
+It provides a **graphical interface** for The Sleuth Kit (TSK) and allows forensic investigators to examine evidence **without using complex command-line tools**.
 
-### Step-3
-Adding a Data Source:
+### 🔹 Key Features
+- File system and partition analysis  
+- Keyword searching and hash filtering  
+- Email and web artifact recovery  
+- Timeline creation and user activity reconstruction  
+- Reporting and evidence export  
 
-- Choose the Type of Data Source
-- Select the Data Source
-- Configure Ingest Modules
-- Start Analysis
+Autopsy is widely used in **law enforcement, cybersecurity, and academic forensics labs** to perform investigations efficiently and accurately.
 
-![(images/step3.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im3.png)
+---
 
-### Step-4
-Initial Analysis and Overview:
+## ⚙️ **Installation**
 
-- Ingest Progress
-- Explore the Resulting Artifacts
-- Use the Tree Viewer
+### 🪄 Steps:
+1️⃣ **Download:**  
+   Visit the official website — [https://www.autopsy.com/download](https://www.autopsy.com/download)
 
-![(images/step4.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im4.png)
+2️⃣ **Install:**  
+   Follow on-screen instructions for your operating system (Windows, Linux, or macOS).
 
-### Step-5
-Reporting:
+3️⃣ **Launch:**  
+   Open Autopsy via the desktop shortcut or the start menu.
 
-Generate a Report:
+---
 
-- After analyzing the data, click on Generate Report from the toolbar.
-- Choose the type of report (HTML, CSV, Excel, etc.).
-- Select which parts of the analysis you want to include in the report.
+## 🧪 **Procedure**
 
-Export Findings:
+---
 
-- Export individual files or artifacts that you need for your report or further analysis.
+### 🔹 **Step 1 — Create a New Case**
 
-Final Review:
+- Launch **Autopsy** and click **“New Case.”**
+- Enter the **Case Name**, **Case Number**, **Examiner Name**, and **Case Directory** for storing data.
+- Click **Next** to continue.
 
-- Review the report to ensure it includes all relevant information.
-- Save or print the report for use in your case.
+<p align="center">
+<img width="800" alt="Step 1" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im1.png" />
+</p>
 
-![[Step 5 Screenshot](images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im5.png)
+---
 
-Report Generation Progress
+### 🔹 **Step 2 — Configure Case Details**
 
-![[Step 5 Screenshot](images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im6.png)
+- Specify where the case data will be stored.
+- Add optional details such as **examiner name**, **department**, and **notes**.
+- Click **Finish** to create the case structure.
 
-Reports
+<p align="center">
+<img width="800" alt="Step 2" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im2.png" />
+</p>
 
-![(images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im7.png)
+---
 
-Text in the report
+### 🔹 **Step 3 — Add a Data Source**
 
-![(images/step5.png)](https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im8.png)
+Choose a data source to analyze:
+- **Select the Source Type** (e.g., disk image, logical files, or local disk).  
+- **Browse and select** the evidence image file (e.g., `.E01`, `.raw`, `.dd`).  
+- **Configure Ingest Modules** such as:
+  - File Type Identification  
+  - Keyword Search  
+  - Hash Lookup  
+  - EXIF and Web History Analysis  
+- Click **Start Analysis** to begin.
 
-### Step-6
-Case Closure:
+<p align="center">
+<img width="800" alt="Step 3" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im3.png" />
+</p>
 
-Close the Case:
+---
 
-- Once you have completed your investigation, close the case within Autopsy.
+### 🔹 **Step 4 — Initial Analysis and Overview**
 
-Archiving:
+Once ingestion begins:
+- Monitor **Ingest Progress** at the bottom panel.  
+- Explore **Resulting Artifacts** such as:
+  - Recently opened files  
+  - Web downloads  
+  - USB activity  
+  - Image and document files  
+- Use the **Tree Viewer** to browse directories and filter specific file types.
 
-- Ensure all data and reports are properly archived according to your organization's policies.
+<p align="center">
+<img width="800" alt="Step 4" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im4.png" />
+</p>
+
+---
+
+### 🔹 **Step 5 — Reporting**
+
+#### 🧾 Generate Report:
+- After completing the analysis, click **Generate Report**.  
+- Choose report type (HTML, CSV, Excel, or XML).  
+- Select which modules or results to include (keywords, hash hits, files, etc.).  
+
+<p align="center">
+<img width="800" alt="Step 5" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im5.png" />
+</p>
+
+#### 📤 Export Findings:
+- Export specific files or directories of interest.
+- Save reports for submission or further analysis.
+
+<p align="center">
+<img width="800" alt="Report Progress" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im6.png" />
+</p>
+
+#### 📋 Sample Generated Reports:
+
+<p align="center">
+<img width="800" alt="Reports" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im7.png" />
+</p>
+
+📄 Example text from report:
+
+<p align="center">
+<img width="800" alt="Report Text" src="https://github.com/Krishnabhargav08/DIGITAL-FORENSICS-LAB-EXERCISES/blob/972f703be7a3d1f082240d8c75b82fb83a26e45c/images/Ex-5%20im8.png" />
+</p>
+
+---
+
+### 🔹 **Step 6 — Case Closure and Archiving**
+
+- Once the investigation is completed, **close the case** using the toolbar option.  
+- Archive the **case folder and reports** securely for future reference or court submission.  
+- Maintain **chain of custody** documentation.
+
+---
+
+## 📊 **Observation Table**
+
+| **Step** | **Action Performed** | **Output / Result** |
+|-----------|----------------------|----------------------|
+| Step 1 | Create a new case | New investigation folder created |
+| Step 2 | Enter case details | Case metadata stored |
+| Step 3 | Add data source | Disk image imported successfully |
+| Step 4 | Analyze evidence | Artifacts displayed and categorized |
+| Step 5 | Generate report | Reports exported in HTML/CSV |
+| Step 6 | Close and archive | Case stored securely |
+
+---
+
+## ✅ **Result**
+Successfully used **Autopsy** to create a forensic case, import a disk image, analyze artifacts, generate a report, and securely archive the evidence.  
+The platform provided insights into user activity, file metadata, and recovered artifacts efficiently.
+
+---
+
+## 🧩 **Inference**
+This experiment demonstrated the process of **digital evidence examination** using Autopsy.  
+It highlights the tool’s ability to:
+- Streamline forensic workflows  
+- Recover deleted data  
+- Analyze user activities  
+- Generate legally admissible reports  
+
+---
+
+## ✨ **Conclusion**
+Autopsy provides a **comprehensive forensic solution** for investigators.  
+Its integration with **The Sleuth Kit (TSK)** allows powerful backend analysis with a simple interface.  
+This makes Autopsy an essential tool for **cybersecurity professionals, digital forensic examiners, and law enforcement agencies**.
+
+---
+
+> 🕵️ *“Digital evidence never lies — Autopsy helps you uncover the truth byte by byte.”*
+
+---
+
+⭐ **End of Experiment — Ex.No.5 (Using Autopsy)** ⭐
