@@ -2,13 +2,18 @@
 
 ---
 
-## 🎓 **Student Information**
+---
 
-| **Name** | **Register No.** | **Branch** | **College** |
-|:---------:|:----------------:|:------------:|:-------------:|
-| 🧑‍💻 **Goru Naga Phaneendra Kumar Babu** | 🆔 **99230041067** | 💻 **CSE - Cybersecurity** | 🏫 **Kalasalingam University** |
+## 🧑‍💻 **Student Details**
+
+| 🔹 **Name** | **Goru Naga Phaneendra Kumar Babu** |
+|-------------|--------------------------------------|
+| 🆔 **Register Number** | **99230041067** |
+| 💻 **Branch** | **CSE - Cybersecurity** |
+| 🎓 **College** | **Kalasalingam University** |
 
 ---
+
 
 ## 🧠 **Aim**
 To acquire both **volatile memory (RAM)** and **non-volatile memory (Disk Image)** using **FTK Imager**, and understand the importance of forensic imaging in digital investigations.
